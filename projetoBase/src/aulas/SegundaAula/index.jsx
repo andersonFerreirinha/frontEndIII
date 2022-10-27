@@ -54,8 +54,6 @@ export function SegundaAula() {
                     <h1>Décimo componente</h1>
                     <p>Placar na tabela de jogos na categoria esporte</p>
                 </li>
-
-
             </ul>
         </main>
     )

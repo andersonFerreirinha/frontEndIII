@@ -1,13 +1,22 @@
 h1 {
     color: red;
+    font-size: 30px;
+}
+
+h2{
+    color: aliceblue;
+    line-height: 55px;
 }
 
 a {
-    font-size: 40px;
+    color: aqua;
+    font-size: 25px;
 }
 
 p{
-    font-size: 22px;
+    font-size: 18px;
     color: aliceblue;
     font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 15px;
 }

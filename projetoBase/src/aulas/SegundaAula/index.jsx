@@ -4,56 +4,32 @@ export function SegundaAula() {
     return (
         <main>
             <h1>Segunda Aula</h1>
-            <h2>Projeto escolhido: globo</h2>
-            <a href="https://www.globo.com/">site globo</a>
+            <h2>Projeto escolhido: Airbnb</h2>
+            <a href="https://www.airbnb.com.br/">url: Airbnb</a>
             <ul>
                 <li>
-                    <h1>Primeiro componente</h1>
-                    <p>Menu da pagina</p>
+                    <h2>Primeiro componente</h2>
+                    <p>O header seria um componente</p>
                 </li>
                 <li>
-                    <h1>Segundo componente</h1>
-                    <p>Itens de menu</p>
+                <h2>Segundo componente</h2>
+                    <p>O campo de busca seria um componente</p>
                 </li>
                 <li>
-                    <h1>Terceiro componente</h1>
-                    <p>Imagens das noticias</p>
+                    <h2>Terceiro componente</h2>
+                    <p>As categorias seria um componente</p>
                 </li>
                 <li>
-                    <h1>Quarto componente</h1>
-                    <p>Titulos das noticias</p>
+                    <h2>Quarto componente</h2>
+                    <p>Os cards com imagens seria um componente</p>
                 </li>
 
                 <li>
-                    <h1>Quinto componente</h1>
-                    <p>Descrição das noticias</p>
+                    <h2>Quinto componente</h2>
+                    <p>O campo para login do usuário seria um componente</p>
                 </li>
-
-                <li>
-                    <h1>Sexto componente</h1>
-                    <p>Titulo das categorias das noticias, ex: esportes, economia, esportes, horóscopo</p>
-                </li>
-
-                <li>
-                    <h1>Sétimo componente</h1>
-                    <p>Botões dos signos na categoria de horóscopo</p>
-                </li>
-
-                
-                <li>
-                    <h1>Oitavo componente</h1>
-                    <p>Tabela de jogos na categoria esporte</p>
-                </li>
-
-                <li>
-                    <h1>Nono componente</h1>
-                    <p>Simbolo dos times nos placares da tabela de jogos</p>
-                </li>
-
-                <li>
-                    <h1>Décimo componente</h1>
-                    <p>Placar na tabela de jogos na categoria esporte</p>
-                </li>
+ 
+               
             </ul>
         </main>
     )

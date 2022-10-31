@@ -1,19 +1,44 @@
 import './style.scss'
-import youtubeImage from './../../assets/images/strangerThings.jpg'
+import  header from './../../assets/images/header.png'
+import  busca from './../../assets/images/busca.png'
+import  categorias from './../../assets/images/categorias.png'
+import  card from './../../assets/images/card.png'
+import  user from './../../assets/images/user.png'
 export function QuartaAula(){
 
     const componentsFinded = [
         {
             id:1,
-            title: 'Video Component',
-            Image: youtubeImage,
-            text: 'Lorem ipsum, dolor it.'
+            title: 'Primeiro Componente',
+            Image: header,
+            text: 'O header seria um componente'
         },
         {
             id:2,
-            title: 'Input Component',
-            Image: youtubeImage,
-            text: 'Lorem ipsum, dolor it amet consectetur.'
+            title: 'Segundo Componente',
+            Image: busca,
+            text: 'O campo de busca'
+        },
+
+        {
+            id:3,
+            title: 'Terceiro Componente',
+            Image: categorias,
+            text: 'As categorias'
+        },
+
+        {
+            id:4,
+            title: 'Quarta Componente',
+            Image: card,
+            text: 'Os cards com imagens'
+        },
+
+        {
+            id:5,
+            title: 'Quinto Componente',
+            Image: user,
+            text: 'Campo para login do usuário'
         }
     ] 
 
@@ -30,7 +55,7 @@ export function QuartaAula(){
                     componentsFinded.map(
                         component => {
                             return(
-
+                                
                                 <li key={component.id} >
                                     <img src={component.Image} alt="" />
                                     <h1>{component.title}</h1>
@@ -44,12 +69,8 @@ export function QuartaAula(){
 
                 }
 
-                <li>
-                    <img src={youtubeImage} alt="" />
-                    <h1>Vídeo</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam rem, harum aut consequatur nostrum aspernatur doloribus a vitae nam iste repellat sed aliquid accusantium, sapiente magnam quod magni incidunt assumenda?</p>
-                </li>
-
+                
+            
             </ul>
         </div>
     )

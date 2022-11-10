@@ -1,17 +1,19 @@
+body{
+    background: black;
+}
+
 .checkpoint-aula-component {
 
     width: 100%;
     max-width: 1200px;
     margin: 50px auto;
+    color: white;
 
     &>h1 {
-
         margin-bottom: 32px;
-
     }
-
+    
     &>button {
-
         color: black;
         padding: 4px;
         margin-right: 12px;
@@ -21,6 +23,9 @@
     .form-error {
 
         background-color: rgba(255, 0, 0, 0.212);
+        color:white;
+       
+        
 
     }
 
@@ -28,13 +33,12 @@
 
         border-radius: 20px;
         border-width: 2px;
-        border-style: solid;
-        border-color: white;
         border-radius: 20px;
         text-align: center;
         margin: 50px auto;
         padding: 30px;
         border-radius: 20px;
+        background: #151515;
 
         h1{
             text-align: center;
@@ -42,38 +46,40 @@
 
         input  {
 
-            width: 30%;
+            width: 20%;
             height: 20px;
-            border-width: 2px;
+            border-width: 1px;
             border-style: solid;
-            border-color: red;
+            border-color: #303030;
             border-radius: 20px;
-            color: black;
+            background: #303030;
             padding: 10px;
-            margin: 10px;
-            overflow: hidden;
+            margin: 20px;
+           
         }
 
         button{
             margin-top: 20px;
             font-size: 18px;
+            font-weight: 900;
             border-radius: 20px;
             border-width: 2px;
             border-style: solid;
-            border-color: rgb(4, 5, 99);
             border-radius: 20px;
-            width: 30%;
+            border-color: #303030;
+            width: 25%;
             height: 50px;
-            color: rgb(184, 13, 13);
-            background-color: rgb(4, 5, 99);
+            color: rgb(241, 237, 237);
+            background: #303030
         }
 
     }
 
     .input-color{
         margin-top: 0px;
-        width: 30%;
+        width: 20%;
         height: 40px;
+        
     }
 
     .tittle-wrapper {
@@ -82,33 +88,20 @@
         justify-content: space-between;
         margin-bottom: 42px;
 
-        button {
-
-            font-size: 16px;
-            background-color: rgb(105, 194, 105);
-            padding: 12px 24px;
-            border: none;
-            border-radius: 4px;
-            transition: .2s ease-in-out;
-
-            &:hover {
-
-                filter: brightness(120%);
-                cursor: pointer;
-
-            }
-
-        }
-
     }
 
     .colors {
 
         display: flex;
-        // justify-content: space-between;
         flex-wrap: wrap;
         gap: 42px;
 
     }
+
+    span {
+            color: rgb(250, 0, 0);
+        }
+
+    
 
 }

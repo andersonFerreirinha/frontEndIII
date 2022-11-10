@@ -13,20 +13,20 @@ function App() {
       
   ])
 
-  const caracter = 6
+  
 
   function cadastrarCor(event) {
 
     event.preventDefault()
 
     const novaCorCadastrada = {
-        name: nomeCor,
-        exadecimal: exadecimalCor,
+        name: nomeCor.trim(),
+        exadecimal: exadecimalCor.trim(),
     }
 
 
 
-    if (nomeCor === '' || exadecimalCor === '' || caracter > '6') {
+    if (nomeCor === '' || exadecimalCor === '' || nomeCor.length < 3 || exadecimalCor.length < 6 ) {
 
         setFormularioErro(true)
 
@@ -56,24 +56,26 @@ function App() {
             <form className={formularioErro ? 'form-error' : ''} onSubmit={event => cadastrarCor(event)}>
             <h1>Cores</h1>
                 <div>
+                    
                     <label htmlFor="nomeCor">Nome</label>
-                    <input id="nomeCor" type="text" minLength={caracter} value={nomeCor.trim()} onChange={event => setNomeCor(event.target.value)} />
-            
-                    <label htmlFor="exadecimalCor">Exadecimal</label>
-                    <input className='input-color' id="exadecimalCor" type="color" value={exadecimalCor.trim()} onChange={event => setExadecimalCor(event.target.value)} />
-                </div>
+                    <input id="nomeCor" type="text" value={nomeCor} onChange={event => setNomeCor(event.target.value)} />
 
-               
+                    <label htmlFor="exadecimalCor">Exadecimal</label>
+                    <input className='input-color' id="exadecimalCor" type="color" value={exadecimalCor} onChange={event => setExadecimalCor(event.target.value)} />
+                </div>               
+                
                 <button type='submit'>Cadastrar Cor</button>
                
 
             </form>
-
+            
             {
                 formularioErro ? (
                     <span> Por favor, verifique os dados inseridos no formulário</span>
                 ) : null
             }
+
+            <h1>Cores Favoritas</h1>
 
             <section className='colors'>
                 {
